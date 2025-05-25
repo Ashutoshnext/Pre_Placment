@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background-color: #390505;
+    padding: 20px;
+
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#TaskInput {
+    width: 40%;
+    padding: 12px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+#AddTaskBtn {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#RemoveAllTaskBtn {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.taskcontainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.maintaskdiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.maintaskdiv>p {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maintaskdiv>div>button {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#SearchTaskInput {
+    width: 40%;
+    padding: 12px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.taskbox>p {
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.taskbox {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskaction>button {
+    padding: 10px;
+}
