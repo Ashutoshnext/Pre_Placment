@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Countdown Timer</title>
+</head>
+<body>
+  <script>
+    let seconds = parseInt(prompt("Enter countdown time in seconds:"), 10);
+
+    if (isNaN(seconds) || seconds <= 0) {
+      console.log("Invalid input. Please enter a positive number.");
+    } else {
+      console.log(`Starting countdown from ${seconds} seconds...`);
+
+
+      const countdownInterval = setInterval(() => {
+        console.log(`Time left: ${seconds} second${seconds !== 1 ? 's' : ''}`);
+        seconds--;
+
+        if (seconds < 0) {
+          clearInterval(countdownInterval);
+          console.log("Countdown Complete!");
+        }
+      }, 1000);
+
+      setTimeout(() => {
+        function handleKey(event) {
+          if (event.key.toLowerCase() === 's') {
+            clearInterval(countdownInterval);
+            console.log("Countdown stopped by user.");
+            window.removeEventListener('keydown', handleKey);
+          }
+        }
+        window.addEventListener('keydown', handleKey);
+      }, 500);
+    }
+  </script>
+</body>
+</html>
