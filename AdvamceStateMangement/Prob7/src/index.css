@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 90%;
+    padding: 20px 150px;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+    background-color: #6ebeed;
+    color: rgb(5, 5, 45);
+}
+h1,h3{
+    margin: 5px 0;
+}
+button{
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    background: #063349;
+    color: rgb(160, 146, 146);
+    font-size: 18px;
+}

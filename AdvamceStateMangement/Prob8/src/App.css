@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 90%;
+    padding: 20px 150px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #82dc96;
+}
+h1{
+    margin: 5px;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+}
